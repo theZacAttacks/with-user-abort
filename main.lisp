@@ -1,6 +1,6 @@
 (in-package :with-user-abort)
 
-(eval-when (compile load eval)
+(eval-when (:compile-toplevel :load-toplevel :execute)
 
   (defun get-implementation-condition ()
     (quote
